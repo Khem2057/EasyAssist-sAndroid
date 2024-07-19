@@ -1,12 +1,15 @@
 package com.example.easyassist;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
 
 public class splash extends AppCompatActivity {
 
@@ -20,5 +23,15 @@ public class splash extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        // Delay for 2 seconds and then start LoginActivity
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(splash.this, login.class);
+                startActivity(intent);
+                finish();
+            }
+        }, 4000); // 2000 milliseconds = 2 seconds
     }
 }
