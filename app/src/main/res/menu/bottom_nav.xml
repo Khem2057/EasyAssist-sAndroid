@@ -3,10 +3,13 @@
 
     <item android:title="Home"
         android:icon="@drawable/home"
+        android:id="@+id/navigation_home"
         />
     <item android:title="Booking"
         android:icon="@drawable/calender"
+        android:id="@+id/navigation_booking"
        />
     <item android:title="Profile"
-        android:icon="@drawable/profile1" />
+        android:icon="@drawable/profile1"
+        android:id="@+id/navigaton_profile"/>
 </menu>

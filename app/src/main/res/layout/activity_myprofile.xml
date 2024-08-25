@@ -9,8 +9,10 @@
     android:background="@color/white">
 
     <TextView
+        android:id="@+id/myp"
         android:layout_width="match_parent"
         android:layout_height="115dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/edit"
         android:drawableLeft="@drawable/arrow"
         android:drawablePadding="50dp"
@@ -26,26 +28,28 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginEnd="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/edit1"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="64dp"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <TextView
-        android:id="@+id/image2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="16dp"
-        android:drawableLeft="@drawable/profile2"
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/profil"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.424"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
 
     <TextView
         android:id="@+id/nm"
@@ -54,14 +58,13 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="Khem Narayan Khojwar"
+        android:text="Kajal Thapa Magar"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.42"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <TextView
         android:id="@+id/call"
@@ -87,12 +90,12 @@
         android:layout_marginTop="5dp"
         android:drawableLeft="@drawable/email"
         android:padding="7dp"
-        android:text="Khojwar.khemnarayan@gmail.com"
+        android:text="thapakajal061@gmail.com"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="16dp"
-        android:paddingStart="55dp"
-        android:drawablePadding="25dp"
+        android:paddingStart="80dp"
+        android:drawablePadding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/call"
         app:layout_constraintStart_toStartOf="parent" />
@@ -104,12 +107,12 @@
         android:layout_marginTop="5dp"
         android:drawableLeft="@drawable/location"
         android:padding="7dp"
-        android:text="kawasoti-15,Nawalpur"
+        android:text="Gaindakot - 5,Nawalpur"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="16dp"
-        android:paddingStart="95dp"
-        android:drawablePadding="25dp"
+        android:paddingStart="87dp"
+        android:drawablePadding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/em"
         app:layout_constraintStart_toStartOf="parent" />
@@ -125,6 +128,4 @@
         app:layout_constraintTop_toBottomOf="@+id/loc"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/logo"/>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

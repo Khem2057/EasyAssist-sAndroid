@@ -13,9 +13,9 @@
         android:id="@+id/arrow"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="90dp"
         app:drawableLeftCompat="@drawable/arrow"
-        android:layout_marginStart="45dp"
+        android:layout_marginStart="39dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,12 +23,12 @@
         android:id="@+id/account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:text="@string/create_your_acoount"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-       android:layout_marginStart="45dp"
+        android:layout_marginStart="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/arrow" />
 
@@ -45,7 +45,9 @@
         android:padding="17dp"
         android:textColorHint="@color/black"
         android:textSize="14sp"
-        android:layout_marginStart="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/account" />
 
@@ -53,7 +55,7 @@
         android:id="@+id/Address"
         android:layout_width="322dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="17dp"
         android:autofillHints="name"
         android:background="@drawable/edit"
         android:backgroundTint="@color/Grey"
@@ -62,7 +64,9 @@
         android:padding="17dp"
         android:textColorHint="@color/black"
         android:textSize="14sp"
-       android:layout_marginStart="45dp"
+       android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Fullname" />
 
@@ -70,7 +74,7 @@
         android:id="@+id/Contact"
         android:layout_width="322dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="17dp"
         android:autofillHints="name"
         android:background="@drawable/edit"
         android:backgroundTint="@color/Grey"
@@ -79,7 +83,9 @@
         android:padding="17dp"
         android:textColorHint="@color/black"
         android:textSize="14sp"
-        android:layout_marginStart="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Address" />
 
@@ -87,7 +93,7 @@
         android:id="@+id/Email"
         android:layout_width="322dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="17dp"
         android:autofillHints="name"
         android:background="@drawable/edit"
         android:backgroundTint="@color/Grey"
@@ -96,7 +102,9 @@
         android:padding="17dp"
         android:textColorHint="@color/black"
         android:textSize="14sp"
-        android:layout_marginStart="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Contact" />
 
@@ -104,7 +112,7 @@
         android:id="@+id/Password"
         android:layout_width="322dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="17dp"
         android:autofillHints="name"
         android:background="@drawable/edit"
         android:backgroundTint="@color/Grey"
@@ -113,7 +121,9 @@
         android:padding="17dp"
         android:textColorHint="@color/black"
         android:textSize="14sp"
-       android:layout_marginStart="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Email" />
 
@@ -121,7 +131,7 @@
         android:id="@+id/ConfirmPassword"
         android:layout_width="322dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="17dp"
         android:autofillHints="name"
         android:background="@drawable/edit"
         android:backgroundTint="@color/Grey"
@@ -130,12 +140,14 @@
         android:padding="17dp"
         android:textColorHint="@color/black"
         android:textSize="14sp"
-        android:layout_marginStart="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Password" />
 
     <Button
-        android:id="@+id/loginButton"
+        android:id="@+id/signButton"
         android:layout_width="322dp"
         android:layout_height="50dp"
         android:layout_marginTop="64dp"
@@ -143,7 +155,9 @@
         android:text="@string/sup"
         android:textColor="@color/white"
         android:textStyle="bold"
-       android:layout_marginStart="45dp"
+       android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ConfirmPassword" />
 

@@ -10,7 +10,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-
 public class splash extends AppCompatActivity {
 
     @Override
@@ -23,15 +22,13 @@ public class splash extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        // Delay for 2 seconds and then start LoginActivity
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(splash.this, login.class);
+                Intent intent=new Intent(splash.this, login.class);
                 startActivity(intent);
                 finish();
             }
-        }, 4000); // 2000 milliseconds = 2 seconds
+        },4000);//2000 milliseconds = 2 seconds
     }
 }

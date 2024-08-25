@@ -6,27 +6,24 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/bookingre"
+   <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:id="@+id/cliend"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="9dp"
-        android:background="@drawable/edit"
-        android:backgroundTint="@color/Grey">
-
-        <LinearLayout
+        android:layout_marginTop="10dp">
+        <RelativeLayout
             android:id="@+id/clientd"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="50dp"
             app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/edit"
+            android:backgroundTint="@color/Grey"
+            android:padding="10dp"
             app:layout_constraintStart_toStartOf="parent">
 
             <TextView
@@ -44,26 +41,15 @@
                 android:id="@+id/clientname"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="95dp"
-                android:layout_marginTop="5dp"
-                android:text="Khem Narayan Khojwar"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="2dp"
+                android:text="Kajal Thapa Magar"
                 android:textSize="18sp" />
-        </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Location"
-      android:textColor="@color/black"
-      app:layout_constraintTop_toBottomOf="@+id/bookingre"
-      app:layout_constraintStart_toStartOf="parent"
-      android:layout_marginTop="15dp"/>
-
+        </RelativeLayout>
+   </LinearLayout>
 
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
