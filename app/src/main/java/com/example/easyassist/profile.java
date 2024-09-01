@@ -73,7 +73,7 @@ public class profile extends AppCompatActivity {
         out.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(profile.this,login.class);
+                Intent intent=new Intent(profile.this,LoginActivity.class);
                 startActivity(intent);
             }
         });

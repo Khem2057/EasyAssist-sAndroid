@@ -40,4 +40,7 @@ dependencies {
     implementation ("com.github.denzcoskun:ImageSlideshow:0.1.2")
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    debugImplementation ("com.github.chuckerteam.chucker:library:3.5.2")
+    releaseImplementation ("com.github.chuckerteam.chucker:library-no-op:3.5.2")
+
 }
